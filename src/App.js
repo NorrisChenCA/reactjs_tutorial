@@ -35,14 +35,21 @@ import './App.css';
 //import Form from './components/05042019basices_of_from_handing/Form';
 //05042019
 //import * as libA  from './modules/libA';
-import { add, substract, incrementNum, num } from './components/05042019import_modules_ES6/modules/libA'
-import mult, { x } from './components/05042019import_modules_ES6/modules/libB'
-import Car from './components/05042019import_modules_ES6/modules/libC'
+//import { add, substract, incrementNum, num } from './components/05042019import_modules_ES6/modules/libA'
+//import mult, { x } from './components/05042019import_modules_ES6/modules/libB'
+//import Car from './components/05042019import_modules_ES6/modules/libC'
+//05242019
+//import LifecycleA from './components/05242019component_mounting_lifecycle_methods/LifecycleA'
+//05282019
+import LifecycleA from './components/05282019component_updating_lifecycle_methods/LifecycleA'
 
 class App extends Component {
   constructor() {
 		super();
-		this.newCar = new Car('speedy');
+    //05042019
+		//this.newCar = new Car('speedy');
+
+
 	}
   render() {
     return (
@@ -109,6 +116,7 @@ class App extends Component {
         {/*<div>{libA.substract(1, 3)}</div>*/}
         {/*<div>{libA.incrementNum(1, 3)}</div>*/}
         {/*<div>{libA.num}</div>*/}
+        {/*
         <div>{add(1, 3)}</div>
         <div>{substract(1, 3)}</div>
         <div>{incrementNum()}</div>
@@ -120,6 +128,13 @@ class App extends Component {
 
         <div>-----------------------</div>
         <div>{ this.newCar.name }</div>
+        */}
+
+        {/*05242019------------------*/}
+        {/*<LifecycleA />*/}
+
+        {/*05282019------------------*/}
+        <LifecycleA />
       </div>
     );
   }
