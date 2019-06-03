@@ -41,7 +41,13 @@ import './App.css';
 //05242019
 //import LifecycleA from './components/05242019component_mounting_lifecycle_methods/LifecycleA'
 //05282019
-import LifecycleA from './components/05282019component_updating_lifecycle_methods/LifecycleA'
+//import LifecycleA from './components/05282019component_updating_lifecycle_methods/LifecycleA'
+//05292019
+//import FragmentDemo from './components/05292019fragments/FragmentDemo'
+//import Table from './components/05292019fragments/Table'
+//06022019
+import RefsDemo from './components/06022019element_reference(Refs)/RefsDemo'
+
 
 class App extends Component {
   constructor() {
@@ -134,7 +140,14 @@ class App extends Component {
         {/*<LifecycleA />*/}
 
         {/*05282019------------------*/}
-        <LifecycleA />
+        {/*<LifecycleA />*/}
+
+        {/*05292019------------------*/}
+        {/*<FragmentDemo />*/}
+        {/*<Table />*/}
+
+        {/*06022019------------------*/}
+        <RefsDemo />
       </div>
     );
   }
