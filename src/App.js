@@ -46,7 +46,16 @@ import './App.css';
 //import FragmentDemo from './components/05292019fragments/FragmentDemo'
 //import Table from './components/05292019fragments/Table'
 //06022019
-import RefsDemo from './components/06022019element_reference(Refs)/RefsDemo'
+//import RefsDemo from './components/06022019element_reference(Refs)/RefsDemo'
+//06032019
+//import FocusInput from './components/06032019Ref_with_class_component/FocusInput'
+//06062019
+//import FRParentInput from './components/06062019forwarding_refs/FRParentInput'
+//06092019
+//import PortalDemo from './components/06092019portals/PortalDemo'
+//06112019
+import Hero from './components/06112019getDerivedStateFromError_componentDidCatch/Hero'
+import ErrorBoundary from './components/06112019getDerivedStateFromError_componentDidCatch/ErrorBoundary'
 
 
 class App extends Component {
@@ -147,7 +156,30 @@ class App extends Component {
         {/*<Table />*/}
 
         {/*06022019------------------*/}
-        <RefsDemo />
+        {/*<RefsDemo />*/}
+
+        {/*06032019------------------*/}
+        {/*<FocusInput />*/}
+
+        {/*06062019------------------*/}
+        {/*<FRParentInput />*/}
+
+        {/*06092019------------------*/}
+        {/*component PortalDemo is mounted in the index.html element 'portal-root', not the 'root' element, one of the usecase for portal is modal popup*/}
+        {/*<PortalDemo />*/}
+
+        {/*06112019------------------*/}
+        <ErrorBoundary>
+          <Hero heroName="Batman"></Hero>
+        </ErrorBoundary>
+
+        <ErrorBoundary>
+          <Hero heroName="Superman"></Hero>
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <Hero heroName="Joker"></Hero>
+        </ErrorBoundary>
       </div>
     );
   }

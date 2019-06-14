@@ -36,7 +36,7 @@ class RefsDemo extends Component {
           <button onClick={this.clickHandler}>Click</button>
         </div>
         <div>
-          <input type="text" ref={this.setCallBackRef} /> {/* after the component mounted, the element call the callBackRef function with itself as parameter */}
+          <input type="text" ref={this.setCallBackRef} /> {/* after the component mounted, the element call the callBackRef function with itself as parameters */}
           <button onClick={this.clickCallBackHandler}>Click</button>
         </div>
       </div>
