@@ -54,9 +54,11 @@ import './App.css';
 //06092019
 //import PortalDemo from './components/06092019portals/PortalDemo'
 //06112019
-import Hero from './components/06112019getDerivedStateFromError_componentDidCatch/Hero'
-import ErrorBoundary from './components/06112019getDerivedStateFromError_componentDidCatch/ErrorBoundary'
-
+//import Hero from './components/06112019getDerivedStateFromError_componentDidCatch/Hero'
+//import ErrorBoundary from './components/06112019getDerivedStateFromError_componentDidCatch/ErrorBoundary'
+//06152019
+import ClickCounter from './components/06152019higher_order_component/ClickCounter'
+import HoverCounter from './components/06152019higher_order_component/HoverCounter'
 
 class App extends Component {
   constructor() {
@@ -169,6 +171,7 @@ class App extends Component {
         {/*<PortalDemo />*/}
 
         {/*06112019------------------*/}
+        {/*
         <ErrorBoundary>
           <Hero heroName="Batman"></Hero>
         </ErrorBoundary>
@@ -176,10 +179,16 @@ class App extends Component {
         <ErrorBoundary>
           <Hero heroName="Superman"></Hero>
         </ErrorBoundary>
-        
+
         <ErrorBoundary>
           <Hero heroName="Joker"></Hero>
         </ErrorBoundary>
+        */}
+
+        {/*06152019------------------*/}
+        <HoverCounter />
+        {/*the name props not go to ClickCount component, the props goes to withCounter component*/}
+        <ClickCounter name='Wishvar'/>
       </div>
     );
   }
