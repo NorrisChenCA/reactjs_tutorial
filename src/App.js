@@ -57,8 +57,13 @@ import './App.css';
 //import Hero from './components/06112019getDerivedStateFromError_componentDidCatch/Hero'
 //import ErrorBoundary from './components/06112019getDerivedStateFromError_componentDidCatch/ErrorBoundary'
 //06152019
-import ClickCounter from './components/06152019higher_order_component/ClickCounter'
-import HoverCounter from './components/06152019higher_order_component/HoverCounter'
+//import ClickCounter from './components/06152019higher_order_component/ClickCounter'
+//import HoverCounter from './components/06152019higher_order_component/HoverCounter'
+//07012019
+import User from './components/07012019render_props/User'
+import ClickCounter from './components/07012019render_props/ClickCounter'
+import HoverCounter from './components/07012019render_props/HoverCounter'
+import Counter from './components/07012019render_props/Counter'
 
 class App extends Component {
   constructor() {
@@ -186,9 +191,17 @@ class App extends Component {
         */}
 
         {/*06152019------------------*/}
-        <HoverCounter />
+        {/*<HoverCounter />*/}
         {/*the name props not go to ClickCount component, the props goes to withCounter component*/}
-        <ClickCounter name='Wishvar'/>
+        {/*<ClickCounter name='Wishvar'/>*/}
+
+        {/*07012019------------------*/}
+        {/*User props is varant*/}
+        {/*<User name="Vishwas"/>*/}
+        {/*User props is function*/}
+        <User name={(isLoggedIn) => isLoggedIn ? 'Vishwas' : 'Guest'}/>
+        <Counter render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} />
+        <Counter render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
       </div>
     );
   }
