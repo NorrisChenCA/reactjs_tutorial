@@ -60,10 +60,14 @@ import './App.css';
 //import ClickCounter from './components/06152019higher_order_component/ClickCounter'
 //import HoverCounter from './components/06152019higher_order_component/HoverCounter'
 //07012019
-import User from './components/07012019render_props/User'
-import ClickCounter from './components/07012019render_props/ClickCounter'
-import HoverCounter from './components/07012019render_props/HoverCounter'
-import Counter from './components/07012019render_props/Counter'
+//import User from './components/07012019render_props/User'
+//import ClickCounter from './components/07012019render_props/ClickCounter'
+//import HoverCounter from './components/07012019render_props/HoverCounter'
+//import Counter from './components/07012019render_props/Counter'
+//07022019
+import ComponentC from './components/07022019context/ComponentC'
+import {UserProvider} from './components/07022019context/userContext'
+
 
 class App extends Component {
   constructor() {
@@ -199,11 +203,16 @@ class App extends Component {
         {/*User props is varant*/}
         {/*<User name="Vishwas"/>*/}
         {/*User props is function*/}
-        <User name={(isLoggedIn) => isLoggedIn ? 'Vishwas' : 'Guest'}/>
-        <Counter render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} />
-        <Counter render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
+        {/*<User name={(isLoggedIn) => isLoggedIn ? 'Vishwas' : 'Guest'}/>*/}
+        {/*<Counter render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} />*/}
+        {/*<Counter render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />*/}
+
+        {/*07022019------------------*/}
+        <UserProvider value='Vishwas'>
+          <ComponentC />
+        </UserProvider>
       </div>
-    );
+    )
   }
 }
 
