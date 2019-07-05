@@ -65,9 +65,10 @@ import './App.css';
 //import HoverCounter from './components/07012019render_props/HoverCounter'
 //import Counter from './components/07012019render_props/Counter'
 //07022019
-import ComponentC from './components/07022019context/ComponentC'
-import {UserProvider} from './components/07022019context/userContext'
-
+//import ComponentC from './components/07022019context/ComponentC'
+//import {UserProvider} from './components/07022019context/userContext'
+//07042019
+import PostList from './components/07042019http_get_request_by_axios/PostList'
 
 class App extends Component {
   constructor() {
@@ -208,9 +209,14 @@ class App extends Component {
         {/*<Counter render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />*/}
 
         {/*07022019------------------*/}
+        {/*
         <UserProvider value='Vishwas'>
           <ComponentC />
         </UserProvider>
+        */}
+
+        {/*07042019------------------*/}
+        <PostList />
       </div>
     )
   }
