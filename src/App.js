@@ -68,7 +68,12 @@ import './App.css';
 //import ComponentC from './components/07022019context/ComponentC'
 //import {UserProvider} from './components/07022019context/userContext'
 //07042019
-import PostList from './components/07042019http_get_request_by_axios/PostList'
+//import PostList from './components/07042019http_get_request_by_axios/PostList'
+//07062019
+//import PostForm from './components/07062019http_post_request_axios/PostForm'
+//07092019
+import ClassCounter from './components/07092019useState_Hook/ClassCounter'
+import HookCounter from './components/07092019useState_Hook/HookCounter'
 
 class App extends Component {
   constructor() {
@@ -216,7 +221,14 @@ class App extends Component {
         */}
 
         {/*07042019------------------*/}
-        <PostList />
+        {/*<PostList />*/}
+
+        {/*07062019------------------*/}
+        {/*<PostForm />*/}
+
+        {/*07092019------------------*/}
+        <ClassCounter />
+        <HookCounter />
       </div>
     )
   }
