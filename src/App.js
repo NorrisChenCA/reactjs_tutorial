@@ -72,8 +72,10 @@ import './App.css';
 //07062019
 //import PostForm from './components/07062019http_post_request_axios/PostForm'
 //07092019
-import ClassCounter from './components/07092019useState_Hook/ClassCounter'
-import HookCounter from './components/07092019useState_Hook/HookCounter'
+//import ClassCounter from './components/07092019useState_Hook/ClassCounter'
+//import HookCounter from './components/07092019useState_Hook/HookCounter'
+//07112019
+import HookCounterTwo from './components/07112019userState_with_previous_state/HookCounterTwo'
 
 class App extends Component {
   constructor() {
@@ -227,8 +229,13 @@ class App extends Component {
         {/*<PostForm />*/}
 
         {/*07092019------------------*/}
+        {/*
         <ClassCounter />
         <HookCounter />
+        */}
+
+        {/*07112019------------------*/}
+        <HookCounterTwo />
       </div>
     )
   }
