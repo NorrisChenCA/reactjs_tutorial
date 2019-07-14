@@ -75,7 +75,12 @@ import './App.css';
 //import ClassCounter from './components/07092019useState_Hook/ClassCounter'
 //import HookCounter from './components/07092019useState_Hook/HookCounter'
 //07112019
-import HookCounterTwo from './components/07112019userState_with_previous_state/HookCounterTwo'
+//import HookCounterTwo from './components/07112019userState_with_previous_state/HookCounterTwo'
+//07122019
+//import HookCounterThree from './components/07122019useState_with_object/HookCounterThree'
+//07132019
+import HookCounterFour from './components/07132019useState_with_array/HookCounterFour'
+
 
 class App extends Component {
   constructor() {
@@ -235,7 +240,13 @@ class App extends Component {
         */}
 
         {/*07112019------------------*/}
-        <HookCounterTwo />
+        {/*<HookCounterTwo />*/}
+
+        {/*07122019------------------*/}
+        {/*<HookCounterThree />*/}
+
+        {/*07132019------------------*/}
+        <HookCounterFour />
       </div>
     )
   }
