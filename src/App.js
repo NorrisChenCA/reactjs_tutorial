@@ -79,8 +79,10 @@ import './App.css';
 //07122019
 //import HookCounterThree from './components/07122019useState_with_object/HookCounterThree'
 //07132019
-import HookCounterFour from './components/07132019useState_with_array/HookCounterFour'
-
+//import HookCounterFour from './components/07132019useState_with_array/HookCounterFour'
+//07152019
+import ClassCounterOne from './components/07152019useEffect_after_render/ClassCounterOne'
+import HookCounterOne from './components/07152019useEffect_after_render/HookCounterOne'
 
 class App extends Component {
   constructor() {
@@ -246,7 +248,11 @@ class App extends Component {
         {/*<HookCounterThree />*/}
 
         {/*07132019------------------*/}
-        <HookCounterFour />
+        {/*<HookCounterFour />*/}
+
+        {/*07152019------------------*/}
+        {/*<ClassCounterOne />*/}
+        <HookCounterOne />
       </div>
     )
   }
