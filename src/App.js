@@ -81,8 +81,11 @@ import './App.css';
 //07132019
 //import HookCounterFour from './components/07132019useState_with_array/HookCounterFour'
 //07152019
-import ClassCounterOne from './components/07152019useEffect_after_render/ClassCounterOne'
-import HookCounterOne from './components/07152019useEffect_after_render/HookCounterOne'
+//import ClassCounterOne from './components/07152019useEffect_after_render/ClassCounterOne'
+//import HookCounterOne from './components/07152019useEffect_after_render/HookCounterOne'
+//07162019
+import ClassCounterOne from './components/07162019conditionally_run_effects/ClassCounterOne'
+import HookCounterOne from './components/07162019conditionally_run_effects/HookCounterOne'
 
 class App extends Component {
   constructor() {
@@ -252,6 +255,10 @@ class App extends Component {
 
         {/*07152019------------------*/}
         {/*<ClassCounterOne />*/}
+        {/*<HookCounterOne />*/}
+
+        {/*07162019------------------*/}
+        <ClassCounterOne />
         <HookCounterOne />
       </div>
     )
