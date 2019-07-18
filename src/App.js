@@ -84,8 +84,13 @@ import './App.css';
 //import ClassCounterOne from './components/07152019useEffect_after_render/ClassCounterOne'
 //import HookCounterOne from './components/07152019useEffect_after_render/HookCounterOne'
 //07162019
-import ClassCounterOne from './components/07162019conditionally_run_effects/ClassCounterOne'
-import HookCounterOne from './components/07162019conditionally_run_effects/HookCounterOne'
+//import ClassCounterOne from './components/07162019conditionally_run_effects/ClassCounterOne'
+//import HookCounterOne from './components/07162019conditionally_run_effects/HookCounterOne'
+//07172019
+//import ClassMouse from './components/07172019run_effects_only_once/ClassMouse'
+//import HookMouse from './components/07172019run_effects_only_once/HookMouse'
+//07172019
+import MouseContainer from './components/07172019useEffect_with_cleanup/MouseContainer'
 
 class App extends Component {
   constructor() {
@@ -258,8 +263,15 @@ class App extends Component {
         {/*<HookCounterOne />*/}
 
         {/*07162019------------------*/}
-        <ClassCounterOne />
-        <HookCounterOne />
+        {/*<ClassCounterOne />*/}
+        {/*<HookCounterOne />*/}
+
+        {/*07172019------------------*/}
+        {/*<ClassMouse />*/}
+        {/*<HookMouse />*/}
+
+        {/*07172019------------------*/}
+        <MouseContainer />
       </div>
     )
   }
