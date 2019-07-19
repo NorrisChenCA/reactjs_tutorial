@@ -90,7 +90,10 @@ import './App.css';
 //import ClassMouse from './components/07172019run_effects_only_once/ClassMouse'
 //import HookMouse from './components/07172019run_effects_only_once/HookMouse'
 //07172019
-import MouseContainer from './components/07172019useEffect_with_cleanup/MouseContainer'
+//import MouseContainer from './components/07172019useEffect_with_cleanup/MouseContainer'
+//07182019
+import IntervalClassCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalClassCounter'
+import IntervalHookCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalHookCounter'
 
 class App extends Component {
   constructor() {
@@ -271,7 +274,11 @@ class App extends Component {
         {/*<HookMouse />*/}
 
         {/*07172019------------------*/}
-        <MouseContainer />
+        {/*<MouseContainer />*/}
+
+        {/*07182019------------------*/}
+        <IntervalClassCounter />
+        <IntervalHookCounter />
       </div>
     )
   }
