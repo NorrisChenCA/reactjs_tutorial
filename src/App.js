@@ -92,8 +92,10 @@ import './App.css';
 //07172019
 //import MouseContainer from './components/07172019useEffect_with_cleanup/MouseContainer'
 //07182019
-import IntervalClassCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalClassCounter'
-import IntervalHookCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalHookCounter'
+//import IntervalClassCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalClassCounter'
+//import IntervalHookCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalHookCounter'
+//07192019
+import DataFetching from './components/07192019fetching_data_with_useEffect_part1/DataFetching'
 
 class App extends Component {
   constructor() {
@@ -277,8 +279,11 @@ class App extends Component {
         {/*<MouseContainer />*/}
 
         {/*07182019------------------*/}
-        <IntervalClassCounter />
-        <IntervalHookCounter />
+        {/*<IntervalClassCounter />*/}
+        {/*<IntervalHookCounter />*/}
+
+        {/*07192019------------------*/}
+        <DataFetching />
       </div>
     )
   }
