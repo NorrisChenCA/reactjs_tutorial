@@ -95,7 +95,11 @@ import './App.css';
 //import IntervalClassCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalClassCounter'
 //import IntervalHookCounter from './components/07182019useEffect_with_incorrect_dependency/IntervalHookCounter'
 //07192019
-import DataFetching from './components/07192019fetching_data_with_useEffect_part1/DataFetching'
+//import DataFetching from './components/07192019fetching_data_with_useEffect_part1/DataFetching'
+//07202019
+//import DataFetching from './components/07202019fetching_data_with_useEffect_part_2/DataFetching'
+//07202019
+import DataFetching from './components/07202019fetching_data_with_useEffect_part_3/DataFetching'
 
 class App extends Component {
   constructor() {
@@ -283,6 +287,12 @@ class App extends Component {
         {/*<IntervalHookCounter />*/}
 
         {/*07192019------------------*/}
+        {/*<DataFetching />s*/}
+
+        {/*07202019------------------*/}
+        {/*<DataFetching />*}
+
+        {/*07202019 part 3------------*/}
         <DataFetching />
       </div>
     )
