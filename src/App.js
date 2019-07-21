@@ -99,7 +99,14 @@ import './App.css';
 //07202019
 //import DataFetching from './components/07202019fetching_data_with_useEffect_part_2/DataFetching'
 //07202019
-import DataFetching from './components/07202019fetching_data_with_useEffect_part_3/DataFetching'
+//import DataFetching from './components/07202019fetching_data_with_useEffect_part_3/DataFetching'
+//07212019
+//import ComponentC from './components/07212019useContext_hook_part_2/ComponentC'
+//export const UserContext = React.createContext()
+//export const ChannelContext = React.createContext()
+//07212019
+import CounterOne from './components/07212019useReducer_simple_state_and_action/CounterOne'
+
 
 class App extends Component {
   constructor() {
@@ -293,7 +300,19 @@ class App extends Component {
         {/*<DataFetching />*}
 
         {/*07202019 part 3------------*/}
-        <DataFetching />
+        {/*<DataFetching />*/}
+
+        {/*07212019 part 3------------*/}
+        {/*
+        <UserContext.Provider value={'Vishwas'}>
+          <ChannelContext.Provider value={'Code volution'}>
+            <ComponentC />
+          </ChannelContext.Provider>
+        </UserContext.Provider>
+        */}
+
+        {/*07212019 -----------------*/}
+        <CounterOne />
       </div>
     )
   }
