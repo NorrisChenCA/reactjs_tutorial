@@ -105,8 +105,9 @@ import './App.css';
 //export const UserContext = React.createContext()
 //export const ChannelContext = React.createContext()
 //07212019
-import CounterOne from './components/07212019useReducer_simple_state_and_action/CounterOne'
-
+//import CounterOne from './components/07212019useReducer_simple_state_and_action/CounterOne'
+//07232019
+import CounterTwo from './components/07232019useReducer_complex_state_and_action/CounterTwo'
 
 class App extends Component {
   constructor() {
@@ -312,7 +313,10 @@ class App extends Component {
         */}
 
         {/*07212019 -----------------*/}
-        <CounterOne />
+        {/*<CounterOne />*/}
+
+        {/*07232019 -----------------*/}
+        <CounterTwo />
       </div>
     )
   }
