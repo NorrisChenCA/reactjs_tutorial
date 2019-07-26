@@ -107,7 +107,9 @@ import './App.css';
 //07212019
 //import CounterOne from './components/07212019useReducer_simple_state_and_action/CounterOne'
 //07232019
-import CounterTwo from './components/07232019useReducer_complex_state_and_action/CounterTwo'
+//import CounterTwo from './components/07232019useReducer_complex_state_and_action/CounterTwo'
+//07252019
+import CounterThree from './components/07252019multiple_useReducers/CounterThree'
 
 class App extends Component {
   constructor() {
@@ -316,7 +318,10 @@ class App extends Component {
         {/*<CounterOne />*/}
 
         {/*07232019 -----------------*/}
-        <CounterTwo />
+        {/*<CounterTwo />*/}
+
+        {/*07252019 -----------------*/}
+        <CounterThree />
       </div>
     )
   }
