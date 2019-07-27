@@ -109,7 +109,13 @@ import './App.css';
 //07232019
 //import CounterTwo from './components/07232019useReducer_complex_state_and_action/CounterTwo'
 //07252019
-import CounterThree from './components/07252019multiple_useReducers/CounterThree'
+//import CounterThree from './components/07252019multiple_useReducers/CounterThree'
+//07262019
+//import AppWripper from './components/07262019useReducer_with_useContext/AppWripper'
+//07262019
+//import DataFetchingOne from './components/07262019fetching_data_with_useReducer_part1/DataFetchingOne'
+//07262019
+import DataFetchingTwo from './components/07262019fetching_data_with_useReducer_part2/DataFetchingTwo'
 
 class App extends Component {
   constructor() {
@@ -321,7 +327,16 @@ class App extends Component {
         {/*<CounterTwo />*/}
 
         {/*07252019 -----------------*/}
-        <CounterThree />
+        {/*<CounterThree />*/}
+
+        {/*07262019 -----------------*/}
+        {/*<AppWripper />*/}
+
+        {/*07262019 -----------------*/}
+        {/*<DataFetchingOne />*/}
+
+        {/*07262019 -----------------*/}
+        <DataFetchingTwo />
       </div>
     )
   }
